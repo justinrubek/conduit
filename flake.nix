@@ -18,11 +18,10 @@
       systems = ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
       imports = [
         ./nix/shells.nix
-
         ./nix/cargo.nix
-
         ./nix/rust-toolchain.nix
         ./nix/rocksdb.nix
+        ./nix/dockerImages.nix
       ];
     };
 }
